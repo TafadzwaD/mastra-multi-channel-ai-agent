@@ -2,6 +2,7 @@ import { Agent } from '@mastra/core/agent';
 import { Memory } from '@mastra/memory';
 import { weatherTool } from '../tools/weather-tool';
 import { scorers } from '../scorers/weather-scorer';
+import {createWhatsAppAdapter} from "@chat-adapter/whatsapp";
 
 export const weatherAgent = new Agent({
   id: 'weather-agent',
@@ -20,6 +21,11 @@ Your primary function is to help users get weather details for specific location
 Use the weatherTool to fetch current weather data.`,
   model: 'openai/gpt-5-mini',
   tools: { weatherTool },
+  channels: {
+    adapters: {
+      whatsapp: createWhatsAppAdapter(),
+    }
+  },
   scorers: {
     toolCallAppropriateness: {
       scorer: scorers.toolCallAppropriatenessScorer,

@@ -3,6 +3,7 @@ import { Memory } from '@mastra/memory';
 import { weatherTool } from '../tools/weather-tool';
 import { scorers } from '../scorers/weather-scorer';
 import {createWhatsAppAdapter} from "@chat-adapter/whatsapp";
+import {createTelegramAdapter} from "@chat-adapter/telegram";
 
 export const weatherAgent = new Agent({
   id: 'weather-agent',
@@ -24,6 +25,7 @@ Use the weatherTool to fetch current weather data.`,
   channels: {
     adapters: {
       whatsapp: createWhatsAppAdapter(),
+      telegram: createTelegramAdapter({mode: 'webhook'})
     }
   },
   scorers: {

@@ -20,9 +20,15 @@ export const whatsAppWebHook = registerApiRoute('/custom/whatsapp/webhook', {
         }
 
         if (c.req.method === 'POST') {
-            const url = new URL(c.req.url);
+            const publicBaseUrl = process.env.PUBLIC_BASE_URL;
 
-            const internalUrl = `${url.origin}/api/agents/weather-agent/channels/whatsapp/webhook`;
+            if (!publicBaseUrl) {
+                console.error('PUBLIC_BASE_URL is missing');
+
+                return c.text('PUBLIC_BASE_URL is missing', 500);
+            }
+
+            const internalUrl = `${publicBaseUrl}/api/agents/weather-agent/channels/whatsapp/webhook`;
 
             const body = await c.req.raw.clone().arrayBuffer();
 

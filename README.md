@@ -16,9 +16,9 @@ For the full WhatsApp setup walkthrough, watch:
 
 ### Telegram Walkthrough
 
-Telegram support is coming soon in the tutorial series.
+For the full Telegram setup walkthrough, watch:
 
-The Telegram walkthrough will show how to configure the Chat SDK Telegram adapter, start with polling mode for local development, and then move to webhook mode using ngrok.
+[Build a Telegram AI Agent with Mastra Channels + Chat SDK](https://www.youtube.com/watch?v=BjlKzYR-Kss&list=PLX8Kj-tc4dHallx-LJ-5uu894S7f52xIC&index=12)
 
 ## What This Project Demonstrates
 
@@ -43,7 +43,7 @@ That means WhatsApp, Telegram, or any future channel should not require a full r
 
 ## Current Walkthroughs
 
-* WhatsApp setup with Mastra Channels and Chat SDK
+* WhatsApp and Telegram setup with Mastra Channels and Chat SDK
 * Local development with Mastra Studio
 * Environment-based configuration
 * Weather tool integration
@@ -54,7 +54,7 @@ That means WhatsApp, Telegram, or any future channel should not require a full r
 This repo follows the YouTube tutorial series. These topics are planned walkthroughs for extending the project, not claims that the underlying adapters or platform capabilities are being developed here.
 
 * [x] WhatsApp setup with Mastra Channels and Chat SDK
-* [ ] Telegram setup with the Chat SDK Telegram adapter
+* [x] Telegram setup with the Chat SDK Telegram adapter
 * [ ] Shared memory across channels
 * [ ] Multi-platform user identity
 * [ ] Deployment setup
@@ -139,7 +139,8 @@ Use the HTTPS forwarding URL from ngrok when configuring webhook-based platforms
 
 ## Useful Links
 
+* [WhatsApp Tutorial](https://www.youtube.com/watch?v=gegT7OmDOVw&list=PLX8Kj-tc4dHallx-LJ-5uu894S7f52xIC&index=11&pp=iAQBsAgC)
+* [Telegram Tutorial](https://www.youtube.com/watch?v=BjlKzYR-Kss&list=PLX8Kj-tc4dHallx-LJ-5uu894S7f52xIC&index=12)
 * [Mastra Documentation](https://mastra.ai/docs/)
 * [Mastra Studio](https://mastra.ai/docs/studio/overview)
 * [Chat SDK](https://chat-sdk.dev/)
-* [WhatsApp Tutorial](https://www.youtube.com/watch?v=gegT7OmDOVw&list=PLX8Kj-tc4dHallx-LJ-5uu894S7f52xIC&index=11&pp=iAQBsAgC)

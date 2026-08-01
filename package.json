@@ -6,7 +6,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mastra dev",
     "build": "mastra build",
-    "start": "mastra start"
+    "start": "mastra start",
+    "voice:dev": "npx tsx src/mastra/voice-worker.ts dev",
+    "voice:start": "npx tsx src/mastra/voice-worker.ts start",
+    "voice:download": "npx livekit-agents download-files"
   },
   "keywords": [],
   "author": "",
@@ -19,10 +22,14 @@
   "dependencies": {
     "@chat-adapter/telegram": "^4.36.0",
     "@chat-adapter/whatsapp": "^4.36.0",
+    "@livekit/agents": "^1.6.1",
+    "@livekit/agents-plugin-silero": "^1.6.1",
+    "@mastra/clickhouse": "^1.13.1",
     "@mastra/core": "^1.55.0",
     "@mastra/duckdb": "^1.5.2",
     "@mastra/evals": "^1.6.0",
     "@mastra/libsql": "^1.18.0",
+    "@mastra/livekit": "^0.3.0",
     "@mastra/loggers": "^1.2.0",
     "@mastra/memory": "^1.24.0",
     "@mastra/observability": "^1.16.3",

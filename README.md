@@ -20,7 +20,7 @@ For the full Telegram setup walkthrough, watch:
 
 [Build a Telegram AI Agent with Mastra Channels + Chat SDK](https://www.youtube.com/watch?v=BjlKzYR-Kss&list=PLX8Kj-tc4dHallx-LJ-5uu894S7f52xIC&index=12)
 
-### Telegram Walkthrough
+### WhatsApp Inbound Calls Answering Walkthrough
 
 For the full WhatsApp AI Agent That Answers Calls walkthrough, watch:
 

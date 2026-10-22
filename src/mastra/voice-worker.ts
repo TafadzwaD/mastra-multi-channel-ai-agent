@@ -14,7 +14,10 @@ export default createLiveKitWorker({
             text: "Thanks for calling, you're speaking with an AI assistant. How can I assist you today?",
             allowInterruptions: false,
         },
-    }
+        endCall: {
+            tool: 'endCall',
+        },
+    },
 })
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

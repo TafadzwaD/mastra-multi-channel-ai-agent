@@ -1,10 +1,18 @@
 import {Agent} from '@mastra/core/agent';
 import {Memory} from '@mastra/memory';
+import {createEndCallTool} from "@mastra/livekit";
 
 
 export const supportAgent = new Agent({
     id: 'support-agent',
     name: 'Support Agent',
+    tools: {
+        endCall: createEndCallTool({
+            id: 'endCall',
+            description:
+                'End the voice call after a natural goodbye, after the customer confirms they need no further help, or after repeated failed attempts to re-engage an unresponsive customer.',
+        })
+    },
     instructions: `
 You are a helpful support agent speaking to a user over a phone call. 
     

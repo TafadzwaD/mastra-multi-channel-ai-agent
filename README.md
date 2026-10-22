@@ -20,6 +20,12 @@ For the full Telegram setup walkthrough, watch:
 
 [Build a Telegram AI Agent with Mastra Channels + Chat SDK](https://www.youtube.com/watch?v=BjlKzYR-Kss&list=PLX8Kj-tc4dHallx-LJ-5uu894S7f52xIC&index=12)
 
+### Telegram Walkthrough
+
+For the full WhatsApp AI Agent That Answers Calls walkthrough, watch:
+
+[Build a WhatsApp AI Agent That Answers Calls with Mastra + LiveKit](https://www.youtube.com/watch?v=maQEsAncwUc&list=PLX8Kj-tc4dHallx-LJ-5uu894S7f52xIC&index=13)
+
 ## What This Project Demonstrates
 
 This project demonstrates a multi-channel AI agent architecture.
@@ -55,6 +61,7 @@ This repo follows the YouTube tutorial series. These topics are planned walkthro
 
 * [x] WhatsApp setup with Mastra Channels and Chat SDK
 * [x] Telegram setup with the Chat SDK Telegram adapter
+* [x] WhatsApp Inbound Calls Answering with Mastra + LiveKit
 * [ ] Shared memory across channels
 * [ ] Multi-platform user identity
 * [ ] Deployment setup
